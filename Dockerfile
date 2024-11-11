@@ -66,6 +66,9 @@ RUN  pip3 install "cython<3"
 
 RUN apt-get update && apt-get install patchelf
 
+RUN pip install setuptools==65.5.0 pip==21
+RUN pip install gym==0.19.0
+
 WORKDIR /app
 
 # Copy your project files into the container (if applicable)

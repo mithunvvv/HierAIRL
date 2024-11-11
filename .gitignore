@@ -1,2 +1,14 @@
 *.pyc
 *.log
+*.0
+HierAIRL_Hopper/=1.20
+HierAIRL_Hopper/=1.5
+HierAIRL_Walker/gym-env/bin/python
+HierAIRL_Walker/gym-env/bin/python3
+HierAIRL_Walker/gym-env/lib64
+HierAIRL_Walker/gym-env/pyvenv.cfg
+myenv/bin/python
+myenv/bin/python3
+myenv/bin/python3.8
+myenv/lib64
+myenv/pyvenv.cfg

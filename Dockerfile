@@ -38,7 +38,22 @@ RUN pip3 install \
     seaborn \
     mujoco-py>=1.5
 
-    
+RUN apt-get update && apt-get install -y \
+    wget \
+    tar && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN mkdir -p /root/.mujoco/mujoco210 && \
+    wget https://mujoco.org/download/mujoco210-linux-x86_64.tar.gz && \
+    tar -zxvf mujoco210-linux-x86_64.tar.gz -C /root/.mujoco/mujoco210 && \
+    rm mujoco210-linux-x86_64.tar.gz 
+
+RUN apt-get update && apt-get install -y libosmesa6-dev libgl1-mesa-glx libglfw3
+
+RUN  pip3 install "cython<3"
+
+RUN apt-get update && apt-get install patchelf
+
 WORKDIR /app
 
 # Copy your project files into the container (if applicable)

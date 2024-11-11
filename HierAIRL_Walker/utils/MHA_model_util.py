@@ -36,6 +36,9 @@ class SkillMhaLayer(BaseNet):
         self.dropout3 = nn.Dropout(dropout)
 
     def forward(self, tgt, memory):
+        # breakpoint()
+        if memory.shape[1] != tgt.shape[1]:
+            memory = memory.repeat(1, tgt.shape[1] // memory.shape[1], 1) 
         tgt2 = self.multihead_attn(tgt, memory, memory)[
             0]  # probably the memory or say embedding matrix will be updated here
         tgt = tgt + self.dropout2(tgt2)
@@ -60,6 +63,7 @@ class SkillPolicy(BaseNet):
     def forward(self, memory, tgt):
         output = tgt
         for mod in self.layers:
+            # breakpoint()
             output = mod(output, memory)
         output = self.norm(output)
         return output

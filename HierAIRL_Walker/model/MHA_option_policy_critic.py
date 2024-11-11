@@ -77,6 +77,7 @@ class MHAOptionPolicy(nn.Module):
         ct_1 = self.embed_option(prev_options.t()).detach()  # (1, bs*dim_c, dim_e)
         # concat
         opt_cat_1 = torch.cat([s_hat.unsqueeze(0), ct_1], dim=0) # (2, bs*dim_c, dim_e)
+        # breakpoint()
         rdt = self.doe(wt, opt_cat_1) # (2, bs*dim_c, dim_e)
         dt = torch.cat([rdt[0].squeeze(0), rdt[1].squeeze(0)], dim=-1) # (bs*dim_c, 2*dim_e)
         opt_logits = self.de_logtis_lc(dt) # (bs*dim_c, dim_c)

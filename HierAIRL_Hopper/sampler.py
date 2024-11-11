@@ -51,9 +51,11 @@ def option_loop(env, policy, fixed):
         s_array = []
         r_array = []
         s, done = env.reset(random=not fixed), False
+        # breakpoint()
         ct = torch.empty(1, 1, dtype=torch.long, device=policy.device).fill_(policy.dim_c)
         c_array.append(ct)
         while not done:
+            # breakpoint()
             st = torch.as_tensor(s, dtype=torch.float32, device=policy.device).unsqueeze(0)
             ct = policy.sample_option(st, ct, fixed=fixed).detach()
             at = policy.sample_action(st, ct, fixed=fixed).detach()

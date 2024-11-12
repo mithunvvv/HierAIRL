@@ -68,6 +68,8 @@ RUN apt-get update && apt-get install patchelf
 
 RUN pip install setuptools==65.5.0 pip==21
 RUN pip install gym==0.19.0
+RUN pip install --upgrade tensorboard 
+# make compatible  with numpy version
 
 WORKDIR /app
 

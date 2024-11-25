@@ -72,6 +72,8 @@ RUN pip install --upgrade tensorboard
 # make compatible  with numpy version
 
 WORKDIR /app
-
+RUN apt-get update \
+    && apt-get install -y \
+    vim nano
 # Copy your project files into the container (if applicable)
 # COPY . /app

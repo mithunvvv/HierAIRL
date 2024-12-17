@@ -75,5 +75,13 @@ WORKDIR /app
 RUN apt-get update \
     && apt-get install -y \
     vim nano
+    
+RUN pip install wandb
 # Copy your project files into the container (if applicable)
 # COPY . /app
+
+# Install specific versions for rl_zoo3 and panda-gym for consistency
+RUN pip install panda-gym==3.0.7 rl_zoo3==2.4.0
+WORKDIR /home
+
+COPY functional.py /usr/local/lib/python3.8/dist-packages/torch/nn/functional.py

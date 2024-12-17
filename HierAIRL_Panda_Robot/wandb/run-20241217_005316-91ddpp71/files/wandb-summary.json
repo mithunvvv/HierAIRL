@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":390},"_step":55,"Train/max-reward":0,"Train/r-demo-avg":5.2145834,"global_step":12,"Test/r-max":-50,"Train/r-sample-avg":-49.60241,"_timestamp":1.7343971632762675e+09,"_runtime":370.603092279,"Test/step-min":50,"Test/expert_logp":-45.349358,"Test/r-min":-50,"Test/r-avg":-50,"Test/step-max":50}

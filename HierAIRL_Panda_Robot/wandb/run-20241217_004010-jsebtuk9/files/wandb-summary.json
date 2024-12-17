@@ -1,0 +1,1 @@
+{"Test/r-max":-50,"Train/max-reward":0,"global_step":22,"_wandb":{"runtime":627},"Train/r-sample-avg":-50,"_step":97,"Train/r-demo-avg":5.785466,"_runtime":620.648907027,"Test/step-max":50,"Test/r-min":-50,"Test/r-avg":-50,"_timestamp":1.7343966298355923e+09,"Test/expert_logp":-42.494213,"Test/step-min":50}

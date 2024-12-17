@@ -1,0 +1,97 @@
+{
+  "os": "Linux-5.13.0-35-generic-x86_64-with-glibc2.27",
+  "python": "CPython 3.8.0",
+  "startedAt": "2024-12-17T20:07:15.628228Z",
+  "args": [
+    "--env_type",
+    "mujoco",
+    "--env_name",
+    "PandaPickAndPlace-v3",
+    "--n_demo",
+    "1000",
+    "--device",
+    "cuda:0",
+    "--tag",
+    "hier-airl-1k",
+    "--algo",
+    "hier_airl"
+  ],
+  "program": "./run_main.py",
+  "codePath": "run_main.py",
+  "git": {
+    "remote": "git@github-account2:mithunvvv/HierAIRL.git"
+  },
+  "root": "/home/HierAIRL_Panda_Robot",
+  "host": "dd628a75b654",
+  "username": "root",
+  "executable": "/usr/bin/python",
+  "codePathLocal": "run_main.py",
+  "cpu_count": 32,
+  "cpu_count_logical": 64,
+  "gpu": "NVIDIA RTX A5000",
+  "gpu_count": 8,
+  "disk": {
+    "/": {
+      "total": "8927963910144",
+      "used": "534879973376"
+    }
+  },
+  "memory": {
+    "total": "473249370112"
+  },
+  "cpu": {
+    "count": 32,
+    "countLogical": 64
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.2"
+}
